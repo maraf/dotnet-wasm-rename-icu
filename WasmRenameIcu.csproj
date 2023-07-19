@@ -13,9 +13,9 @@
     <WasmExtraFilesToDeploy Include="main.js" />
   </ItemGroup>
 
-  <Target Name="RenameIcuToAppBundle" AfterTargets="WasmBuildApp">
+  <Target Name="RenameIcuToAppBundle" AfterTargets="WasmBuildApp;WasmNestedPublishApp">
     <ItemGroup>
-      <IcuFiles Include="$(WasmAppDir)\**\*.dat" />
+      <IcuFiles Include="$(OutputPath)\**\*.dat" />
     </ItemGroup>
 
     <Move SourceFiles="@(IcuFiles)"

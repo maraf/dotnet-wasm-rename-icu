@@ -25,14 +25,14 @@ The solution consists of two parts
 
   ...
 
-  <!-- After the application is build -->
-  <Target Name="RenameIcuToAppBundle" AfterTargets="WasmBuildApp">
+  <!-- 👇 After the application is build/published -->
+  <Target Name="RenameIcuToAppBundle" AfterTargets="WasmBuildApp;WasmNestedPublishApp">
     <ItemGroup>
-      <!-- Find all ICU files in AppBundle -->
+      <!-- 👇 Find all ICU files in AppBundle -->
       <IcuFiles Include="$(WasmAppDir)\**\*.dat" />
     </ItemGroup>
 
-    <!-- Change their extension to 'NewIcuFileExtension' -->
+    <!-- 👇 Change their extension to 'NewIcuFileExtension' -->
     <Move SourceFiles="@(IcuFiles)"
       OverwriteReadOnlyFiles="true"
       DestinationFiles="%(RelativeDir)%(Filename)$(NewIcuFileExtension)" />
@@ -44,11 +44,11 @@ The solution consists of two parts
 
 ```js
 ... = await dotnet
-    // Override defaults. This 'withStartupOptions' functions will go away before GA in favor of 'withResourceLoader' with the same signature as 'loadBootResource'
+    // 👇 Override defaults. This 'withStartupOptions' functions will go away before GA in favor of 'withResourceLoader' with the same signature as 'loadBootResource'
     .withStartupOptions({
-        // Override resource URL resolution
+        // 👇 Override resource URL resolution
         loadBootResource: function (type, name, defaultUri, integrity) {
-            // Override extension of ICU files
+            // 👇 Override extension of ICU files
             if (type == 'globalization') {
                 defaultUri = defaultUri.replace('.dat', '.icu');
             }
