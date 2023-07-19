@@ -1,7 +1,7 @@
 {
   "entryAssembly": "WasmRenameIcu.dll",
   "resources": {
-    "hash": "sha256-PH9W1UsbIaLuWaFodlaFswb3Iz6jxIPRChRcJ4Jp6fQ=",
+    "hash": "sha256-EEN4qQ\u002BPFZxfK3wS7TPeguPWc/soifCKxqzgeHOjdr4=",
     "runtime": {
       "dotnet.native.wasm": "sha256-d/yLLm8ig1UGGk5toyCBKV4GGyzI8QgAUVOPAz0gWDU=",
       "dotnet.native.js": "sha256-nUGYfv52NPwfRQ71UvdDFU77DpGcsVpcVcR2qFLSwvQ=",
@@ -15,8 +15,8 @@
     "assembly": {
       "System.Console.wasm": "sha256-Mm23yfzk6rdg35O2uyuND6lRdhw60csQ0GwPi5yfypE=",
       "System.Private.CoreLib.wasm": "sha256-9ZajwcuBteAiyJrzdyaDda6Lj3WVgxOKzVN\u002B9Uw2g3A=",
-      "System.Runtime.InteropServices.JavaScript.wasm": "sha256-9jQ6lWTzqXu4mAqxYc5ora5WOvmV5TIrlnALSCUU1Eo=",
-      "WasmRenameIcu.wasm": "sha256-h4nKyjozvmonHxpjMyjPu\u002B0BCMxKzQF65ISA/7hjrJg="
+      "System.Runtime.InteropServices.JavaScript.wasm": "sha256-El/hkBCswfoyB04kg0yRzgnpv5l/85IO39KRoji3s1o=",
+      "WasmRenameIcu.wasm": "sha256-ZnHf73rquZZ1DvwdtWI\u002BPHHjwUPuQRuUlkm/hwOWGMM="
     },
     "pdb": null,
     "satelliteResources": null,
