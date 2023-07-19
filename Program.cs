@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.Runtime.InteropServices.JavaScript;
 
 Console.WriteLine("Hello, Browser!");
@@ -8,7 +9,9 @@ public partial class MyClass
     [JSExport]
     internal static string Greeting()
     {
-        var text = $"Hello, World! Greetings from {GetHRef()}";
+        string GetDayOfWeek(CultureInfo cultureInfo) => cultureInfo.DateTimeFormat.GetDayName(DateTime.Now.DayOfWeek);
+
+        var text = $"EN: {GetDayOfWeek(CultureInfo.CurrentCulture)}, DE: {GetDayOfWeek(new CultureInfo("de-DE"))}";
         Console.WriteLine(text);
         return text;
     }
