@@ -2,6 +2,10 @@
 
 Change extension of ICU files in .NET on WASM app
 
+## Live demo
+
+<https://maraf.github.io/dotnet-wasm-rename-icu/>
+
 ## Building source code
 
 - Install .NET 8 SDK (preview)
