@@ -1,0 +1,52 @@
+{
+  "entryAssembly": "WasmRenameIcu.dll",
+  "resources": {
+    "hash": "sha256-PH9W1UsbIaLuWaFodlaFswb3Iz6jxIPRChRcJ4Jp6fQ=",
+    "runtime": {
+      "dotnet.native.wasm": "sha256-d/yLLm8ig1UGGk5toyCBKV4GGyzI8QgAUVOPAz0gWDU=",
+      "dotnet.native.js": "sha256-nUGYfv52NPwfRQ71UvdDFU77DpGcsVpcVcR2qFLSwvQ=",
+      "dotnet.native.js.symbols": "sha256-S60rM4cjVfIYOOcGJtaLxG4620EJbmJEj14PatzZ6oI=",
+      "dotnet.js": "sha256-5ej3XmgtrCZ3zVL5kH/GtESPg1UsCW1kLlnvDfFoAC4=",
+      "dotnet.runtime.js": "sha256-Z7vuZT0/cL\u002BpuWDXkCcqkRRPWxYRO0yG4utqfCmeUj8=",
+      "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
+      "icudt_EFIGS.dat": "sha256-8fItetYY8kQ0ww6oxwTLiT3oXlBwHKumbeP2pRF4yTc=",
+      "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q\u002B0Nfs="
+    },
+    "assembly": {
+      "System.Console.wasm": "sha256-Mm23yfzk6rdg35O2uyuND6lRdhw60csQ0GwPi5yfypE=",
+      "System.Private.CoreLib.wasm": "sha256-9ZajwcuBteAiyJrzdyaDda6Lj3WVgxOKzVN\u002B9Uw2g3A=",
+      "System.Runtime.InteropServices.JavaScript.wasm": "sha256-9jQ6lWTzqXu4mAqxYc5ora5WOvmV5TIrlnALSCUU1Eo=",
+      "WasmRenameIcu.wasm": "sha256-h4nKyjozvmonHxpjMyjPu\u002B0BCMxKzQF65ISA/7hjrJg="
+    },
+    "pdb": null,
+    "satelliteResources": null,
+    "lazyAssembly": null,
+    "libraryInitializers": null,
+    "libraryStartupModules": null,
+    "extensions": null,
+    "runtimeAssets": {
+      "dotnet.native.wasm": {
+        "hash": "sha256-d/yLLm8ig1UGGk5toyCBKV4GGyzI8QgAUVOPAz0gWDU=",
+        "behavior": "dotnetwasm"
+      }
+    },
+    "vfs": {
+      "runtimeconfig.bin": {
+        "supportFiles/0_runtimeconfig.bin": "sha256-uPV6BGI5kocVSm1MmidY1TJe9jgC0eI8hxHekJTvDL4="
+      }
+    },
+    "remoteSources": null
+  },
+  "cacheBootResources": false,
+  "debugBuild": false,
+  "debugLevel": 0,
+  "linkerEnabled": false,
+  "config": [],
+  "icuDataMode": 0,
+  "startupMemoryCache": null,
+  "runtimeOptions": null,
+  "extensions": null,
+  "environmentVariables": null,
+  "diagnosticTracing": null,
+  "pthreadPoolSize": null
+}
