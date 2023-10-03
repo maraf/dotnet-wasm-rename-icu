@@ -8,7 +8,7 @@ Change extension of ICU files in .NET on WASM app
 
 ## Building source code
 
-- Install .NET 8 SDK (preview)
+- Install .NET 8 SDK (RC1)
 - Install wasm-tools workload `dotnet workload install wasm-tools`
 - Run the project `dotnet run`
 
