@@ -48,17 +48,14 @@ The solution consists of two parts
 
 ```js
 ... = await dotnet
-    // 👇 Override defaults. This 'withStartupOptions' functions will go away before GA in favor of 'withResourceLoader' with the same signature as 'loadBootResource'
-    .withStartupOptions({
-        // 👇 Override resource URL resolution
-        loadBootResource: function (type, name, defaultUri, integrity) {
-            // 👇 Override extension of ICU files
-            if (type == 'globalization') {
-                defaultUri = defaultUri.replace('.dat', '.icu');
-            }
+    // 👇 Override resource URL resolution
+    .withResourceLoader((type, name, defaultUri, integrity) => {
+          // 👇 Override extension of ICU files
+          if (type == 'globalization') {
+              defaultUri = defaultUri.replace('.dat', '.icu');
+          }
 
-            return defaultUri;
-        }
-    })
+          return defaultUri;
+      })
     .create();
 ```

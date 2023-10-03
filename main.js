@@ -5,15 +5,13 @@ import { dotnet } from './_framework/dotnet.js'
 
 const { setModuleImports, getAssemblyExports, getConfig } = await dotnet
     .withDiagnosticTracing(false)
-    .withStartupOptions({
-        loadBootResource: function (type, name, defaultUri, integrity) {
-            // Override extension of ICU files
-            if (type == 'globalization') {
-                defaultUri = defaultUri.replace('.dat', '.icu');
-            }
-
-            return defaultUri;
+    .withResourceLoader((type, name, defaultUri, integrity) => {
+        // Override extension of ICU files
+        if (type == 'globalization') {
+            defaultUri = defaultUri.replace('.dat', '.icu');
         }
+
+        return defaultUri;
     })
     .withApplicationArgumentsFromQuery()
     .create();
